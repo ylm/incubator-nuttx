@@ -53,6 +53,18 @@ config NET_PROMISCUOUS
 		Force the Ethernet driver to operate in promiscuous mode (if supported
 		by the Ethernet driver).
 
+config NETINIT_MACADDR_1
+	int "Ethernet MAC Address"
+	default 287454020
+	---help---
+		Sets the default MAC Address
+
+config NETINIT_MACADDR_2
+	int "Ethernet MAC Address"
+	default 287454020
+	---help---
+		Sets the default MAC Address
+
 menu "Driver buffer configuration"
 
 config NET_ETH_PKTSIZE

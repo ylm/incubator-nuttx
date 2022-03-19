@@ -89,7 +89,7 @@ $(CXXOBJS) $(LINKOBJS): %$(OBJEXT): %.cxx
 	$(call COMPILEXX, $<, $@)
 
 libboard$(LIBEXT): $(OBJS) $(CXXOBJS)
-	$(call ARCHIVE, $@, $(OBJS) $(CXXOBJS))
+	$(call ARCHIVE, $@, $^)
 
 .depend: Makefile $(SRCS) $(CXXSRCS) $(RCSRCS) $(TOPDIR)$(DELIM).config
 ifneq ($(ZDSVERSION),)

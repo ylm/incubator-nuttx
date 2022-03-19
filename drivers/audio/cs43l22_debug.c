@@ -35,6 +35,7 @@
 #include <fixedmath.h>
 #include <syslog.h>
 
+#include <nuttx/fs/fs.h>
 #include <nuttx/audio/audio.h>
 #include <nuttx/audio/cs43l22.h>
 
